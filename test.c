@@ -7,11 +7,11 @@
 
 int main()
 {
-	int i;
+	int i,j;
 	
 	i=galois_single_divide(8,255,8);
-//	i=galois_single_multiply(255,galois_inverse(255,8),8);
+	j=galois_single_multiply(255,galois_inverse(255,8),8);
 
-	printf("%d\n",i);
+	printf("%d %d\n",i,j);
 	return 0;
 }
